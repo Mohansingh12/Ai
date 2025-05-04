@@ -13,3 +13,4 @@ for i in A_dictionary:
     print(i, A_dictionary[i])
 
 print(A_dictionary.get(1))
+A_dictionary[6] = 'mohan'
