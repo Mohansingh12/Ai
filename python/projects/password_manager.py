@@ -1,18 +1,16 @@
 class PasswordManager:
-    def __init__(self):
-        self.passwords = {'google.com': {'username': 'user1', 'password': 'pass1'}}
-
     def add_password(self,website, username, password):
-        self.passwords[website] = {'username': username, 'password': password}
-        print(f"Password for {website} added successfully!")
+        with open("passwords.txt", "a") as f:
+         f.write(f"Website: {website}, Username: {username}, Password: {password}\n")
     def view_passwords(self):
-        if not self.passwords:
-            print("No passwords stored yet.")
-        else:
-            print("Stored passwords:")
-            for website, details in self.passwords.items():
-                print(f"Website: {website}, Username: {details['username']}, Password: {details['password']}")
-
+        with open("passwords.txt", "r") as f:
+            passwords = f.readlines()
+            if not passwords:
+                print("No passwords stored.")
+            else:
+                print("Stored Passwords:")
+                for password in passwords:
+                    print(password.strip())
     
 
 
