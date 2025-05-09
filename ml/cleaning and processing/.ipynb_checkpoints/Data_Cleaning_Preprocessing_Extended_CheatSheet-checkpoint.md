@@ -32,7 +32,7 @@ Missing values can cause model errors or misleading results. Handle them before 
 df.isnull().sum()                 # Count missing values per column
 df.dropna()                       # Drop rows with missing values
 df.fillna(0)                      # Replace missing with 0
-df.fillna(method='ffill')        # Forward-fill previous value
+dp.ffill()        # Forward-fill previous value
 df['col'].fillna(df['col'].mean())  # Replace with column mean
 ```
 
