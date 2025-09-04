@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-openai = OpenAI(api_key="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")
+openai = OpenAI(api_key="YOUR_API_KEY")
 
 model = "gpt-4o"    
 temperature = 0.7
