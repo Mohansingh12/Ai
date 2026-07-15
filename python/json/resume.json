@@ -1,0 +1,47 @@
+{"Name" : "mohan singh",
+"Age" : 25,
+"is graduated" : true,
+"cgpa" : 6.3,
+"skills" : ["python", "java", "c++", "html", "css"],
+"address" : {
+"city" : "Agra",
+"state" : "Uttar Pradesh",
+"pincode" : 282001
+
+},
+"projects" : {
+    "resume Screaning tool" :{
+        "language" : "python",
+        "framework" : "Flask",
+        "completed" : true
+    },
+    "Ai Fake news detection" : {
+        "language" : "python",
+        "framework" : "Django",
+        "completed" : true
+}
+},
+"social media ": {
+    "linkedin" : "https://www.linkedin.com/in/mohansingh",
+    "github" : "https://github.com/mohansingh"
+},
+"Experience":[{
+    "1" : {
+        "company" : "rouge international",
+        "role" : "Software Engineer",
+        "duration" : "5 months",
+        "technologies" : ["python", "java", "html", "css"]
+
+    },
+
+    "2":{
+        "company" : "HP tech ventures",
+        "role" : "Intern",
+        "duration" : "3 months",
+        "skills" : ["Venture Capital", "Business Development", "Market Research"]
+    }}
+
+]
+
+
+}
