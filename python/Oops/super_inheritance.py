@@ -1,4 +1,5 @@
-# super inheritance is used to call the parent class constructor from the child class constructor. It is used to avoid code duplication and to make the code more readable and maintainable.
+# super inheritance is used to call the parent class constructor from the child class constructor. It is used to avoid code duplication 
+# and to make the code more readable and maintainable.
 class engine:
     def __init__(self, horsepower):
         self.horsepower = horsepower
