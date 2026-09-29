@@ -1,0 +1,8 @@
+#config file
+
+Project ="test"
+version = "1.0"
+[requirment]
+python =  3.6
+mysq =5.5
+
