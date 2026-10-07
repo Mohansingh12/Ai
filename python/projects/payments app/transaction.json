@@ -1,0 +1,14 @@
+[
+    {
+        "amount": 10000,
+        "account": 110,
+        "date": "2026-10-07",
+        "type": "credit"
+    },
+    {
+        "amount": 1000,
+        "account": 100,
+        "date": "2026-10-07",
+        "type": "debit"
+    }
+]
