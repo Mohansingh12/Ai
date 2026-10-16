@@ -46,7 +46,7 @@ while True:
             credit = Credit(transaction)
         case "3":
             for transaction in book:
-                print(f"ID: {transaction.id}, Category: {transaction.category}, Amount: {transaction.amount}, Description: {transaction.description}, Type: {transaction.type}")
+                print(f"ID: {transaction.id_}, Category: {transaction.category}, Amount: {transaction.amount}, Description: {transaction.description}, Type: {transaction.type}")
         case "4":
             for transaction in book:
                 if transaction.type == "Expense":

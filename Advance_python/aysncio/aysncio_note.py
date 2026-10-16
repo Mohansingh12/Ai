@@ -2,11 +2,17 @@ import asyncio
 import time
 
 
-def function():
-    print(1)
-    time.sleep(1)
-    print(2)
-    time.sleep(2)
-    print(3)
+async def function(await_time,data):
+    print(await_time)
+    await asyncio.sleep(await_time)
+    return data
 
-function()
+async def main():
+    task1 = function(3,'mohan')
+    task2 = function(2,'sumit')
+    result = await task1
+    print(result)
+    result = await task2
+    print(result)
+
+asyncio.run(main())

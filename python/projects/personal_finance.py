@@ -13,20 +13,20 @@ class AddExpense(Expense):
 class ViewExpenses:
     def __init__(self):
         for expense in expenses:
-            print(f"ID: {expense.id}, Category: {expense.category}, Amount: {expense.amount}, Date: {expense.date}")
+            print(f"ID: {expense.id_}, Category: {expense.category}, Amount: {expense.amount}, Date: {expense.date}")
 class SearchExpenses:
     def __init__(self, category: str):
         found = False
         for expense in expenses:
             if expense.category == category:
-                print(f"ID: {expense.id}, Category: {expense.category}, Amount: {expense.amount}, Date: {expense.date}")
+                print(f"ID: {expense.id_}, Category: {expense.category}, Amount: {expense.amount}, Date: {expense.date}")
                 found = True
         if not found:
             print("No expenses found in this category.")
 class DeleteExpense:
     def __init__(self, id: int):
         global expenses
-        expenses = [expense for expense in expenses if expense.id != id]
+        expenses = [expense for expense in expenses if expense.id_ != id]
         print(f"Expense with ID {id} has been deleted.")
 class ShowStatistics:
     def __init__(self):

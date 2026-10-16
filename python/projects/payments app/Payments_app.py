@@ -39,9 +39,8 @@ class Operations:
         data = self._load_all_data()
         print("--- Current Transaction History ---")
 
-        transactions=json.dumps(data, indent=2)
         for transaction in data:
-            if transaction['account']==account:
+            if transaction['account'] == account:
                 print(transaction)
 
 class User:

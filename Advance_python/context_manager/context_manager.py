@@ -17,7 +17,7 @@ with open ('test.txt', 'a') as f, open('text2.txt', 'r') as g:
 with open ('test.txt', 'r') as f:
     print(f.read())
 
-""" genrated based context manager"""
+""" generated based context manager"""
 @contextmanager
 def new_context(filename:str,mode:str):
     F=open(filename,mode)
